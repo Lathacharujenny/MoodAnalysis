@@ -1,0 +1,39 @@
+artifacts_root: artifacts
+
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  data_url: https://datasetsurl.onrender.com/emotions
+
+data_transformation:
+  root_dir: artifacts/data_transformation
+  data_path: artifacts/data_ingestion/emotions.csv
+  pipeline_path: artifacts/cleaning_pipeline/cleaning_pipeline.pkl
+  labels_path: artifacts/labels
+  
+data_splitting:
+  root_dir: artifacts/data_splitting
+  data_path: artifacts/data_transformation/cleaned_data.csv
+
+data_tokenization:
+  root_dir: artifacts/data_tokenization
+  train_data_path: artifacts/data_splitting/train.csv
+  test_data_path: artifacts/data_splitting/test.csv
+  pickle_path: artifacts/data_tokenization/pickle
+  tokenizer_data_path: artifacts/data_tokenization/data
+  
+model_training:
+  root_dir: artifacts/model
+  x_train_data_path: artifacts/data_tokenization/data/X_train.npy
+  y_train_data_path: artifacts/data_tokenization/data/y_train.csv
+  x_test_data_path: artifacts/data_tokenization/data/X_test.npy
+  y_test_data_path: artifacts/data_tokenization/data/y_test.csv
+  maxlen_path: artifacts/data_tokenization/pickle/maxlen.pkl
+
+model_evaluation:
+  root_dir: artifacts/model_evaluation
+  model_path: artifacts/model/model.pkl
+  model_history_path: artifacts/model/history.pkl
+  x_test_data_path: artifacts/data_tokenization/data/X_test.npy
+  y_test_data_path: artifacts/data_tokenization/data/y_test.csv
+
+
