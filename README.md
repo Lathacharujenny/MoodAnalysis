@@ -22,6 +22,10 @@ The project follows **modular coding principles** for better maintainability and
 - **Processing Artifacts:** Comprehensive documentation of preprocessing steps in the `artifacts` folder.
 
 ---
+## Datasets
+-The datasets (in CSV format) are hosted as part of the app, with Flask and Render serving the files directly through URL links.
+  - Github link - https://github.com/Lathacharujenny/DatasetsUrl.git
+  - App link - https://datasetsurl-9cc6ccd16e07.Renderapp.com/
 
 ## Pipeline Design
 The project is structured into the following reusable modules:
