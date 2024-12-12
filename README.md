@@ -1,6 +1,6 @@
 
 # **Mood Analysis Project**
-![Mood Analysis Flow](image/mood_image.jpg "Overview of Mood Analysis Flow")
+<img src="image/mood_image.jpg" alt="Overview of Mood Analysis Flow" width="600" height="400">
 
 ## **Overview**
 
